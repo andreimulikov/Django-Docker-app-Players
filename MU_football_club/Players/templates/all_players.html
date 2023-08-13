@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Manchester United - All players
+{% endblock %}
+
+
+{% block content %}
+  <div class="mycard">
+    <h1>PLAYERS</h1>
+    <ul>
+      {% for x in myplayers %}
+        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ myplayer.firstname }} {{ myplayer.lastname }}
+{% endblock %}
+
+{% block content %}
+  <div class="mycard">
+    <h1>{{ myplayer.firstname }} {{ myplayer.lastname }}</h1>
+    <p>Position: {{ myplayer.position }}</p>
+    <p>Number: {{ myplayer.number }}</p>
+    <p>Date of Birth: {{ myplayer.date_of_birth }}</p>
+    <p>Joined: {{ myplayer.joined_date }}</p>
+    <p>Country: {{ myplayer.country }}</p>
+  </div>
+{% endblock %}
